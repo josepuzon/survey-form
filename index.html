@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body class="w3-container w3-light-gray w3-monospace">
+    <h1
+      id="title"
+      class="w3-center w3-blue w3-padding w3-sans-serif"
+      style="font-size: 2em"
+    >
+      Product Survey Form
+    </h1>
+    <p id="description" class="w3-center">Please fill out the survey below.</p>
+
+    <form
+      id="survey-form"
+      class="w3-card-4 w3-padding"
+      style="max-width: 50%; margin: auto"
+      method="get"
+    >
+      <div class="w3-margin">
+        <label id="name-label" for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="w3-input w3-border"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div class="w3-margin">
+        <label id="email-label" for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="w3-input w3-border"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="w3-margin">
+        <label id="number-label" for="number">Age:</label>
+        <input
+          type="number"
+          id="number"
+          name="number"
+          class="w3-input w3-border"
+          min="16"
+          max="90"
+          placeholder="Enter your age"
+          required
+        />
+      </div>
+
+      <div class="w3-margin">
+        <label for="dropdown">Choose product:</label>
+        <select
+          id="dropdown"
+          name="product"
+          class="w3-select w3-border"
+          required
+        >
+          <option value="">Select an option</option>
+          <option value="mouse">Mouse</option>
+          <option value="keyboard">Keyboard</option>
+          <option value="monitor">Monitor</option>
+        </select>
+      </div>
+
+      <fieldset class="w3-margin">
+        <legend>How would you rate the overall quality of this product?</legend>
+        <label class="w3-margin-left"
+          ><input type="radio" name="quality" value="excellent" />
+          Excellent</label
+        >
+        <label class="w3-margin-left"
+          ><input type="radio" name="quality" value="good" /> Good</label
+        >
+        <label class="w3-margin-left"
+          ><input type="radio" name="quality" value="fair" /> Fair</label
+        >
+        <label class="w3-margin-left"
+          ><input type="radio" name="quality" value="bad" /> Bad</label
+        >
+        <label class="w3-margin-left"
+          ><input type="radio" name="quality" value="unacceptable" />
+          Unacceptable</label
+        >
+      </fieldset>
+
+      <fieldset class="w3-margin">
+        <legend>Would you recommend this product?</legend>
+        <label class="w3-margin-left"
+          ><input type="radio" name="recommendation" value="yes" /> Yes</label
+        >
+        <label class="w3-margin-left"
+          ><input type="radio" name="recommendation" value="no" /> No</label
+        >
+      </fieldset>
+
+      <fieldset class="w3-margin">
+        <legend>How did you hear about us?</legend>
+        <div style="display: flex; align-items: center">
+          <label class="w3-margin-left">
+            <input type="checkbox" name="ads" value="friend" /> Friend
+          </label>
+          <label class="w3-margin-left">
+            <input type="checkbox" name="ads" value="social-media" /> Social
+            Media
+          </label>
+          <label class="w3-margin-left">
+            <input type="checkbox" name="ads" value="other" /> Other:
+          </label>
+          <input
+            type="text"
+            placeholder="Type here for other"
+            style="margin-left: 10px; width: 170px"
+          />
+        </div>
+      </fieldset>
+
+      <div class="w3-margin">
+        <label for="comments">Additional Comments:</label>
+        <textarea
+          id="comments"
+          name="comments"
+          class="w3-input w3-border"
+          placeholder="Enter your comments here"
+        ></textarea>
+      </div>
+
+      <div class="w3-center">
+        <button
+          id="submit"
+          type="submit"
+          class="w3-button w3-blue w3-margin-top"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
